@@ -1,0 +1,172 @@
+/* RESET CSS */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+/* EXERCÍCIO 1 */
+/* FLEXBOX NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px;
+background:#eee;
+
+}
+
+.menu{
+display:flex;
+gap:20px;
+}
+
+/* EXERCÍCIO 2 */
+/* FLEXBOX WRAP */
+
+.cards{
+
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+
+padding:20px;
+}
+
+.card{
+
+width:150px;
+height:100px;
+
+background:#ddd;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+border-radius:8px;
+
+}
+
+/* EXERCÍCIO 3 */
+/* GRID */
+
+.grid-galeria{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+grid-template-rows:150px 150px;
+
+gap:10px;
+
+padding:20px;
+
+}
+
+.item1{background:#333;color:white;}
+.item2{background:#ff7f50;}
+.item3{background:#3498db;}
+.item4{background:#f1c40f;}
+
+/* EXERCÍCIO 4 */
+/* GRID AREAS */
+
+.grid-areas{
+
+display:grid;
+
+grid-template-areas:
+
+"header header"
+"aside main"
+"footer footer";
+
+grid-template-columns:1fr 3fr;
+
+gap:10px;
+
+padding:20px;
+
+}
+
+header{grid-area:header;background:#444;color:white;padding:20px;}
+aside{grid-area:aside;background:#888;padding:20px;}
+main{grid-area:main;background:#00bcd4;padding:20px;}
+footer{grid-area:footer;background:#222;color:white;padding:20px;}
+
+/* EXERCÍCIO 5 */
+/* GRID + FLEXBOX */
+
+.layout{
+
+display:grid;
+
+grid-template-rows:auto 1fr auto;
+
+height:300px;
+
+}
+
+.content{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+
+}
+
+.box{
+
+width:80px;
+height:80px;
+
+background:#4caf50;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+font-weight:bold;
+
+}
+
+.grid-galeria{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 200px 200px;
+    gap: 15px;
+}
+
+.item1{
+    grid-column: 1 / 2;
+    background:#333;
+    color:white;
+}
+
+.item2{
+    grid-column: 2 / 3;
+    background:#ff7f50;
+}
+
+.item3{
+    grid-column: 1 / 2;
+    background:#3498db;
+}
+
+.item4{
+    grid-column: 2 / 3;
+    background:#f1c40f;
+}
+
+body{
+    max-width:1200px;
+    margin:auto;
+}
